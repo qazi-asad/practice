@@ -18,3 +18,6 @@ arr=(Alhpa Bravo Charlie Delta Echo Foxtrot)
 
 # Write a for loop to print the elements of the array along with index
 ### Your code gors here ###
+for i in ${!arr[@]}; do
+echo "Index is: $i and element is ${arr[i]}"
+done
