@@ -77,7 +77,7 @@ eval echo {$start..$end} # variable expansion occurs then resulting string is ev
 
 ## Conditonal Statement
 
-Conditional Statement in Bash is defined in a script using following syntax
+if-else Conditional Statement in Bash is defined in a script using following syntax
 
 ```bash
 if [[ conditional test ]]; then
@@ -89,6 +89,17 @@ else
 fi
 ```
 
+Case Conditional Statement in Bash is defined in a script using following syntax
+
+```bash
+case test-variable in
+  pattern-1) statements to execute upon this success;;
+  pattern-2) statements to execute upon this success;;
+  pattern-3) statements to execute upon this success;;
+  *) statements to execute upon this success;;
+esac
+```
+
 ## Loops
 
 Loops in Bash are defined in a script using following syntax
@@ -97,6 +108,13 @@ Loops in Bash are defined in a script using following syntax
 
 ```bash
 for item in list
+do
+    statements to execute
+done
+```
+
+```bash
+for (( initializer; conditional test; incrementer ))
 do
     statements to execute
 done
