@@ -156,3 +156,21 @@ name ()
 | = != < >              | String Comparison operatores                 | if [[$str != '']]      |
 | == != > >= < < =      | Arithmetical Expression Comparison Operators | if (( 8 > 4 ))         |
 | && \|\| !             | LOGICAL AND, OR and NOT operators            | true && true           |
+
+## Shell Variables
+
+| Variable     | Description                              | Example            |
+| ------------ | ---------------------------------------- | ------------------ |
+| $            | Process ID of the shell process          | echo $$            |
+| @            | List of all passed positional parameters | echo $@            |
+| #            | Total number of passed paramters         | echo $#            |
+| 0            | Name of shell or script run command      | echo $0            |
+| BASH_VERSION | Bersion number of Bash shell             | echo $BASH_VERSION |
+| BASHPID      | Process ID of the shell process          | echo $BASHPID      |
+| EDITOR       | Default editor of the shell              | EDITOR=nano        |
+| PATH         | The path to search for commands          | echo $PATH         |
+| PWD          | Current Working Directory                | echo $PWD          |
+| RANDOM       | Generate random number 0-32767           | echo $RANDOM       |
+| REPLY        | Default variable for read command        | echo $REPLY        |
+| SHELL        | Path address of the shell                | echo $SHELL        |
+| TERM         | Terminal type                            | echo $TERM         |
