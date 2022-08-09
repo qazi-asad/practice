@@ -72,3 +72,87 @@ echo {$start..$end}  # fails to expand due to the evaluation order
 eval echo {$start..$end} # variable expansion occurs then resulting string is evaluated
 # 1 2 3 4 5 6 7 8 9 10
 ```
+
+---
+
+## Conditonal Statement
+
+Conditional Statement in Bash is defined in a script using following syntax
+
+```bash
+if [[ conditional test ]]; then
+    statements to execute upon this success
+elif [[ contional test ]]; then
+    statements to execute upon this success
+else
+    statements to execute upon this success
+fi
+```
+
+## Loops
+
+Loops in Bash are defined in a script using following syntax
+
+### For Loop
+
+```bash
+for item in list
+do
+    statements to execute
+done
+```
+
+### While Loop
+
+```bash
+initializer
+while conditional test is true
+do
+    statements to execute
+    icrementer
+done
+```
+
+- use `break` to break the loop when a certain condition is met
+- use `continue` to skip the loop iteration
+
+## functions
+
+A Bash function must be defined in a script using this syntax
+
+```bash
+function name
+{
+    statements to be executed
+}
+```
+
+A definition may use the function keyword or use this syntax
+
+```bash
+name ()
+{
+    statements to be executed
+}
+```
+
+## Special Characters
+
+| Characters            | Description                                  | Example                |
+| --------------------- | -------------------------------------------- | ---------------------- |
+| ~                     | Home directory                               | cd ~                   |
+| .                     | Previous directory                           | cd .                   |
+| ..                    | Parent directory                             | cd ..                  |
+| ;                     | Command seperator                            | pwd; ls                |
+| $                     | Variable substitution                        | echo $SHELL            |
+| $()                   | Command substitution                         | echo $(date +%H:%M)    |
+| ' '                   | Strong quote                                 | echo "Literal $var"    |
+| " "                   | Weak quote                                   | echo "Interpret $var"  |
+| \|                    | Pipeline redirector                          | cat ballad.txt \| more |
+| (( ))                 | Arithmetic expression operator               | (( 8+4 ))              |
+| $(( ))                | Arithmetic expression substitution           | echo $(( 8+4 ))        |
+| [[]]                  | Conditional test operator                    | if [[true && true]]    |
+| -eq -ne-gt-ge -lt -le | Numerical Comparison operatores              | if [[$nume -ne 0]]     |
+| = != < >              | String Comparison operatores                 | if [[$str != '']]      |
+| == != > >= < < =      | Arithmetical Expression Comparison Operators | if (( 8 > 4 ))         |
+| && \|\| !             | LOGICAL AND, OR and NOT operators            | true && true           |
