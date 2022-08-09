@@ -5,6 +5,7 @@
 - `#!` is called **shebang**, and is mandatory to place in bash script followed by the bash path
   - `echo $SHELL` to get the path of the bash
 - `man command` to get help about any command
+- `alias` to define custom commands (e.g. `alias myPull='git pull --rebase'`)
 - `whami` and `hostname` command to get user and username of the pc
 - `history` to get the history of the shell
 - `read` command
