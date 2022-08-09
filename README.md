@@ -18,11 +18,24 @@
 - use `export myVar=Hello` to add to the environment variable
 - `chmod a+xrw bashFile.sh` to provide the access to a file
 - All arithmetic operations needs to be placed between `(())`
-- array is defined as `arr=(1 2 3 4 5 6)`, and has following properties
-  - To access any element: `${arr[3]}`
-  - To get the whole array: `${arr[@]}`
-  - To get the array length: `${#arr[@]}`
-  - To get the array indexes: `${!arr[@]}`
+
+## Arrays in Bash
+
+Array is defined as `arr=(1 2 3 4 5 6)`, and has following properties
+
+- To access any element: `${arr[3]}`
+- To get the whole array: `${arr[@]}`
+- To get the array length: `${#arr[@]}`
+- To get the array indexes: `${!arr[@]}`
+- To Slice an array: `${arr[@]:start:length}`
+  ```
+  # array slicing basic format 1: grab a certain length starting at a certain
+  # index
+  echo "${arr[@]:2:5}"
+  #              │ │
+  #              │ └────> slice length
+  #              └──────> slice starting index
+  ```
 
 ---
 
