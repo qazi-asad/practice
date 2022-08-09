@@ -9,7 +9,7 @@ function first
     echo "This is the first function"
 }
 
-function cube()
+cube()
 {
     echo "5x5x5= $((5*5*5))"
 }
