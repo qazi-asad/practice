@@ -12,9 +12,10 @@ done
 ((i++))
 done
 
-arr=(Alhpa Bravo Charlie Delta Echo Foxtrot)
 
 # Write a for loop to print the elements of the array along with index
+arr=(Alhpa Bravo Charlie Delta Echo Foxtrot)
+
 ### Your code gors here ###
 
 n=0

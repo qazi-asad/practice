@@ -5,14 +5,17 @@
 - `#!` is called **shebang**, and is mandatory to place in bash script followed by the bash path
   - `echo $SHELL` to get the path of the bash
 - `man command` to get help about any command
+- `whami` and `hostname` command to get user and username of the pc
+- `history` to get the history of the shell
 - `read` command
-  - `-p` to display and read in the same line
+  - `-p` to prompt message and read at the same time
   - `-a` to take array as input
   - `$REPLY` to read the output from read
 - `diff` command to find difference between two files
 - `env | grep SHELL` to find environment variables
   - `grep` command is to find something in long text/output
 - use `export myVar=Hello` to add to the environment variable
+- `chmod a+xrw bashFile.sh` to provide the access to a file
 - All arithmetic operations needs to be placed between `(())`
 - array is defined as `arr=(1 2 3 4 5 6)`, and has following properties
   - To access any element: `${arr[3]}`

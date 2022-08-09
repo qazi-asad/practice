@@ -14,9 +14,10 @@ echo "Inner Loop iteration: $j"
 done
 done
 
-arr=(Alhpa Bravo Charlie Delta Echo Foxtrot)
 
 # Write a for loop to print the elements of the array along with index
+arr=(Alhpa Bravo Charlie Delta Echo Foxtrot)
+
 ### Your code gors here ###
 for i in ${!arr[@]}; do
 echo "Index is: $i and element is ${arr[i]}"
