@@ -13,3 +13,16 @@ cube()
 {
     echo "5x5x5= $((5*5*5))"
 }
+
+month=$1
+function new {
+    echo "$0-$1"
+    case $month in
+    3|4|5) echo "Months is spring";;
+    6|7|8) echo "Months is autumn";;
+    9|10|11) echo "Months is winter";;
+    12|1|2) echo "Months is summer";;
+    *) echo "Wrong Value";;
+    esac
+}
+new
